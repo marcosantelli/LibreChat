@@ -178,5 +178,28 @@
         "description": "Provide your Flux API key from your user profile."
       }
     ]
-  }
+  },
+  {
+    "name": "AI-Concert",
+    "pluginKey": "aiconcert",
+    "description": "Connect to AI-Concert Server for terminal commands, file operations, code analysis, and project management.",
+    "icon": "https://raw.githubusercontent.com/ai-concert/librechat-go-server/main/logo.png",
+    "authConfig": [
+      {
+        "authField": "AICONCERT_API_URL",
+        "label": "AI-Concert Server URL",
+        "description": "The URL of your LibreChat Go Server (e.g., http://localhost:8080)"
+      },
+      {
+        "authField": "AICONCERT_WS_URL",
+        "label": "AI-Concert WebSocket URL",
+        "description": "The WebSocket URL of your LibreChat Go Server (e.g., ws://localhost:8080/ws)"
+      },
+      {
+        "authField": "AICONCERT_AUTH_TOKEN",
+        "label": "AI-Concert Auth Token",
+        "description": "Authentication token for your LibreChat Go Server (optional if your server provides guest access)"
+      }
+    ]
+  }  
 ]
